@@ -20,6 +20,7 @@ let
 
 const allMix = {
     'snow' : [ 'snowflake', 'snowflake', 'Снег'],
+    'sun' : ['fire', 'fire', 'Солнце'],
     'snowflake' : ['snow-rain', 'snow-rain', 'Снежинка'],
     'ice-cube' : ['ice', 'machete', 'Кубики льда'],
     'ice-water' : ['water', 'ice-cube', 'Холодная вода'],
@@ -31,14 +32,29 @@ const allMix = {
     'river' : ['water', 'water', 'Река'],
     'steam' : ['fire','water', 'Пар'],
     'rain' : ['steam', 'steam', 'Дождь'],
-    'igloo' : ['ice', 'ice', 'Игла'],
+    'forest-fire' : ['forest', 'fire', 'Лес горит'],
+    'arctic' : ['ice', 'ice', 'Север'],
     'tree' : ['little-tree', 'rain', 'Дерево'],
     'snow-rain' : ['rain', 'cold', 'Снегопад'],
-    'water' : ['rain', 'rain', 'Вода'],
     'grass' : ['little-tree', 'little-tree', 'Трава'],
     'forest' : ['tree', 'tree', 'Лес'],
     'christmas-tree' : ['tree', 'snow', 'Елка'],
-    'christmas-tree-snow' : ['christmas-tree', 'snow-rain', 'Снежная Елка']
+    'christmas-tree-snow' : ['christmas-tree', 'snow-rain', 'Снежная Елка'],
+    'beam' : ['machete', 'fire', 'Сталь'],
+    'nail' : ['beam', 'fire', 'Гвозди'],
+    'wood' : ['tree', 'machete', 'Бревно'],
+    'christmas-wood' : ['christmas-tree', 'machete', 'Еловое полено'],
+    'house' : ['wood', 'nali', 'Дом'],
+    'snow-house' : ['house', 'snow-rain', 'Снежный дом'],
+    'ocean' : ['river', 'river', 'Океан'],
+    'sea' : ['ocean', 'ocean', 'Море'],
+    'life' : ['sea', 'sea', 'Жизнь'],
+    'fish' : ['sea', 'life', 'Рыба'],
+    'meat-fish' : ['fish', 'machete', 'Мясо рыбы'],
+    'wolf' : ['forest', 'life', 'Волк'],
+    'dog' : ['house', 'wolf', 'Собака'],
+    'big-dog' : ['snow-house', 'wolf', 'Большая собака'],
+    'penguin' : ['arctic', 'life', 'Пингвин']
 }
 
 // Data in localStorage
