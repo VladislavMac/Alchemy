@@ -72,6 +72,7 @@ main.main{
     width: 80px;
     height: 80px;
     cursor: pointer;
+    user-select: none;
 }
 .active{
     box-shadow: 0 0 5px 5px #77FFCD;

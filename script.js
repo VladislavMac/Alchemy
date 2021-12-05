@@ -43,8 +43,7 @@ const allMix = {
     'beam' : ['machete', 'fire', 'Сталь'],
     'nail' : ['beam', 'fire', 'Гвозди'],
     'wood' : ['tree', 'machete', 'Бревно'],
-    'christmas-wood' : ['christmas-tree', 'machete', 'Еловое полено'],
-    'house' : ['wood', 'nali', 'Дом'],
+    'house' : ['wood', 'nail', 'Дом'],
     'snow-house' : ['house', 'snow-rain', 'Снежный дом'],
     'ocean' : ['river', 'river', 'Океан'],
     'sea' : ['ocean', 'ocean', 'Море'],
@@ -108,10 +107,16 @@ for( let k = 0; k < footerItem.length; k++ ){
             console.log(0)
         }else{
             for( let key in allMix ){
-                if( allMix[key][0] == footerItem[0].getAttribute('alt') &&  allMix[key][1] == footerItem[1].getAttribute('alt')){
-                    userIngredients[key] = allMix[key][2];
-                    localStorage.setItem(key, allMix[key][2]);
-                    window.location.reload();
+                if( footerItem[0].getAttribute('alt') == 'dog' && footerItem[1].getAttribute('alt') == 'machete' ){
+                    localStorage.clear();
+                }else if( footerItem[0].getAttribute('alt') == 'big-dog' && footerItem[1].getAttribute('alt') == 'machete'){
+                    localStorage.clear();
+                }else {
+                    if( allMix[key][0] == footerItem[0].getAttribute('alt') &&  allMix[key][1] == footerItem[1].getAttribute('alt')){
+                        userIngredients[key] = allMix[key][2];
+                        localStorage.setItem(key, allMix[key][2]);
+                        window.location.reload();
+                    }
                 }
             }
         }
