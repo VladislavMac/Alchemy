@@ -9,19 +9,36 @@ const
 let 
     userIngredients = {
         'fire' : 'Огонь',
-        'rain' : 'Дождь',
+        'water' : 'Вода',
         'cold' : 'Холод',
-        'little-tree' : 'Росток'
+        'little-tree' : 'Росток',
+        'machete' : 'Мачете',
+        'stone' : 'Камень'
     },
     itemIcon        = '',
     itemAlt         = '';
 
 const allMix = {
-    'snow' : [ 'snow-rain', 'snow-rain', 'Снег'],
-    'igloo' : ['snow', 'snow', 'Игла'],
+    'snow' : [ 'snowflake', 'snowflake', 'Снег'],
+    'snowflake' : ['snow-rain', 'snow-rain', 'Снежинка'],
+    'ice-cube' : ['ice', 'machete', 'Кубики льда'],
+    'ice-water' : ['water', 'ice-cube', 'Холодная вода'],
+    'ice' : ['water', 'cold', 'Лед'],
+    'mountain' : ['stone', 'stone', 'Гора'],
+    'snow-mountain' : ['mountain', 'snow-rain', 'Снежные горы'],
+    'snow-man' : ['snow', 'snow', 'Снеговик'],
+    'desertification' : ['little-tree', 'fire', '?'], 
+    'river' : ['water', 'water', 'Река'],
+    'steam' : ['fire','water', 'Пар'],
+    'rain' : ['steam', 'steam', 'Дождь'],
+    'igloo' : ['ice', 'ice', 'Игла'],
     'tree' : ['little-tree', 'rain', 'Дерево'],
     'snow-rain' : ['rain', 'cold', 'Снегопад'],
-    'water' : ['rain', 'rain', 'Вода']
+    'water' : ['rain', 'rain', 'Вода'],
+    'grass' : ['little-tree', 'little-tree', 'Трава'],
+    'forest' : ['tree', 'tree', 'Лес'],
+    'christmas-tree' : ['tree', 'snow', 'Елка'],
+    'christmas-tree-snow' : ['christmas-tree', 'snow-rain', 'Снежная Елка']
 }
 
 // Data in localStorage
