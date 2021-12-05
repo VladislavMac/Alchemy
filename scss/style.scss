@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    background-color: #111;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+}
+
+header.header{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Work Sans', sans-serif;
+    border: 2px solid #77FFCD;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-title{
+        min-width: 100px;
+    }
+    .title{
+        color: #77FFCD;
+        font-size: 30px;
+    }
+}
+
+main.main{
+    overflow-y: scroll;
+    width: 100%;
+    height: 80%;
+    .main-all_item{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+    }
+    .wrapper-item{
+        cursor: pointer;
+        padding: 6px;
+        padding-left: 10px;
+    }
+    .desc{
+        font-family: 'Nunito', sans-serif;
+        color: #77FFCD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.item, .result{
+    font-family: 'Nunito', sans-serif;
+    transition-duration: 0.3s;
+    border-radius: 50%;
+    border: 2px solid #77FFCD;
+    background-color: rgb(32, 32, 32);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.active{
+    box-shadow: 0 0 5px 5px #77FFCD;
+}
+
+footer.footer{
+    border: 2px solid #77FFCD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    .footer-all_item{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .sim{
+            color: #77FFCD;
+            font-size: 30px;
+        }
+        .result{
+            background-color: rgb(83, 83, 83);
+        }
+    }
+}
+.result-desc{
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: #77FFCD;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:272px){
+    body{
+        .item, .result{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+@media only screen and (max-height:623px){
+    header.header{
+        .header-title{
+            .title{
+                color: #77FFCD;
+                font-size: 20px;
+            }
+        }
+    }
+    body{
+        .item, .result{
+            width: 60px;
+            height: 60px;
+        }
+        footer.footer{
+                    font-size:80%;
+            }
+    }
+}
+
+@media only screen and (max-height:553px){
+    body{
+        .item, .result{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+
+@media only screen and (max-height:483px){
+    body{
+        header.header{
+            display: none;
+        }
+        .item, .result{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-height:311px){
+    body{
+        .item, .result{
+            width: 40px;
+            height: 40px;
+        }
+        footer.footer{
+            .footer-all_item{
+                .result-desc{
+                    font-size: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-height:251px){
+    body{
+        .item, .result{
+            width: 30px;
+            height: 30px;
+        }
+
+    }
+}
+
+@media only screen and (max-height:207px){
+    body{
+        .item, .result{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media only screen and (max-height:207px){
+    body{
+        header.header{
+            display: flex;
+            justify-content: center;
+            border: none;
+            height: 100%;
+        }
+        footer{
+            display: none;
+        }
+        .item{
+            display: none;
+        }
+    }
+}
