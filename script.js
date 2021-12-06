@@ -65,6 +65,16 @@ const allMix = {
     'milk' : ['cow', 'cow', 'Молоко'],
     'wheat' : ['field', 'machete', 'Пшеница'],
     'flour' : ['wheat', 'wheat', 'Мука'],
+    'pita' : ['flour', 'water', 'Лаваш'],
+    'shawarma' : ['pita', 'meat-chicken', 'Шаурма'],
+    'dough' : ['flour', 'egg', 'Тесто'],
+    'pie' : ['campfire', 'dough', 'Пирог'],
+    'stone-oven' : ['campfire', 'stone', 'Печь'],
+    'bread' : ['stone-oven', 'dough', 'Хлеб'],
+    'sliced-bread' : ['bread', 'machete', 'Куски хлеба'],
+    'meat-cow' : ['cow', 'machete', 'Кусок мяса'],
+    'meat-hot-cow' : ['campfire', 'meat-cow', 'Жареное мясо'],
+    'sandwich' : ['sliced-bread', 'meat-hot-cow', 'Бутерброд']
 }
 
 // Data in localStorage
