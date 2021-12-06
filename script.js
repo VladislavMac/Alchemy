@@ -53,7 +53,18 @@ const allMix = {
     'wolf' : ['forest', 'life', 'Волк'],
     'dog' : ['house', 'wolf', 'Собака'],
     'big-dog' : ['snow-house', 'wolf', 'Большая собака'],
-    'penguin' : ['arctic', 'life', 'Пингвин']
+    'penguin' : ['arctic', 'life', 'Пингвин'],
+    'field' : ['grass', 'grass', 'Поле'],
+    'cow' : ['field', 'life', 'Корова'],
+    'forest-asia' : ['forest', 'sun', 'Лес Азии'],
+    'chicken' : ['forest-asia', 'life', 'Курица'],
+    'egg' : ['house', 'chicken', 'Яйцо'],
+    'meat-chicken' : ['chicken', 'machete', 'Куриная ножка'],
+    'campfire' : ['wood', 'fire', 'Костер'],
+    'fried-egg' : ['campfire', 'egg', 'Жареное яйцо'],
+    'milk' : ['cow', 'cow', 'Молоко'],
+    'wheat' : ['field', 'machete', 'Пшеница'],
+    'flour' : ['wheat', 'wheat', 'Мука'],
 }
 
 // Data in localStorage
