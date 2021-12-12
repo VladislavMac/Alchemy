@@ -45,7 +45,7 @@ const allMix = {
     'wood' : ['tree', 'machete', 'Бревно'],
     'house' : ['wood', 'nail', 'Дом'],
     'snow-house' : ['house', 'snow-rain', 'Снежный дом'],
-    'ocean' : ['river', 'river', 'Океан'],
+    'ocean' : ['river', 'river', 'Озеро'],
     'sea' : ['ocean', 'ocean', 'Море'],
     'life' : ['sea', 'sea', 'Жизнь'],
     'fish' : ['sea', 'life', 'Рыба'],
